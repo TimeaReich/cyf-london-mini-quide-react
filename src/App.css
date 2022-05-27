@@ -2,5 +2,16 @@
   text-align: center;
 }
 .category-button {
+  border: none;
+  color: #fff;
   background-color: blueviolet;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
+}
+.inactive-button {
+  border: none;
+  color: #fff;
+  background-color: rgb(58, 3, 109);
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
 }
