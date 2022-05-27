@@ -1,26 +1,46 @@
-import React, { useState } from "react";
-const CategoriesButtons = () => {
-  const [active, setActive] = useState("");
-  console.log(active);
-  const handleClick = () => {};
+import React from "react";
+const CategoriesButtons = (props) => {
+  console.log(props.category);
   return (
     <div>
       <button
         value="hospitals"
-        className={active === "hospitals" ? "active-button" : "inactive-button"}
-        onClick={(e) => setActive(e.target.value)}
+        className={
+          props.category === "hospitals" ? "category-button" : "inactive-button"
+        }
+        onClick={(e) => props.setCategory(e.target.value)}
       >
         Hospitals
       </button>
       <button
         value="doctors"
-        className={active === "doctors" ? "active-button" : "inactive-button"}
-        onClick={(e) => setActive(e.target.value)}
+        className={
+          props.category === "doctors" ? "category-button" : "inactive-button"
+        }
+        onClick={(e) => props.setCategory(e.target.value)}
       >
         Doctors
       </button>
-      <button>Schools</button>
-      <button>Pharmacies</button>
+      <button
+        value="schools"
+        className={
+          props.category === "schools" ? "category-button" : "inactive-button"
+        }
+        onClick={(e) => props.setCategory(e.target.value)}
+      >
+        Schools
+      </button>
+      <button
+        value="pharmacies"
+        className={
+          props.category === "pharmacies"
+            ? "category-button"
+            : "inactive-button"
+        }
+        onClick={(e) => props.setCategory(e.target.value)}
+      >
+        Pharmacies
+      </button>
     </div>
   );
 };
