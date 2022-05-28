@@ -15,7 +15,7 @@ function App() {
 
   useEffect(() => {
     fetch(`https://cyf-london-mini-guide.glitch.me/${selectedCity}/${category}`)
-      .then((res) => console.log(res))
+      .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.log(err));
   }, [category]);

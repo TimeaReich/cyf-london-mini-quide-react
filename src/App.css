@@ -15,3 +15,10 @@
   padding: 0.5rem 1rem;
   margin: 0.5rem 1rem;
 }
+.table {
+  margin-top: 2rem;
+}
+.thead-dark {
+  background-color: rgb(16, 0, 73);
+  color: #fff;
+}
